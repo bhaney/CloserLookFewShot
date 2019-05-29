@@ -174,4 +174,5 @@ if __name__=='__main__':
         else:
             raise ValueError('No warm_up file')
 
+    print(params)
     model = train(base_loader, val_loader,  model, optimization, start_epoch, stop_epoch, params)
